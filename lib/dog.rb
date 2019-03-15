@@ -16,4 +16,5 @@ class Dog
     SQL
 
     DB[:conn].execute(sql)
+  end
 end
