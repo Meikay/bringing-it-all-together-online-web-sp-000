@@ -4,7 +4,11 @@ class Dog
     :name => "TEXT",
     :breed => "TEXT"
   }
-  attr_accessor :name, :breed, :id
+
+  ATTRIBUTES.keys.each do |key|
+    attr_accessor key
+  end
+
   def initialize(id: nil, name:, breed:)
     @id = id
     @name = name
