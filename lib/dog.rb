@@ -5,8 +5,8 @@ class Dog
     :breed => "TEXT"
   }
 
-  ATTRIBUTES.keys.each do |key|
-    attr_accessor key
+  ATTRIBUTES.keys.each do |attribute_name|
+    attr_accessor attribute_name
   end
 
   def initialize(id: nil, name:, breed:)
