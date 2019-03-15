@@ -76,7 +76,7 @@ class Dog
 
   def self.find_or_create_by(attributes_hash)
     sql = <<-SQL
-      SELECT * FROM dogs WHERE name = ? AND breed = ? 
+      SELECT * FROM dogs WHERE name = ? AND breed = ?
       LIMIT 1
     SQL
 
